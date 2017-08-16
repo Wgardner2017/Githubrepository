@@ -41,11 +41,16 @@ img {
 /* Navigation  */
 .name {
   font-size: 1.25em;
+  margin: 0;
 }
-
+nav {
+  margin-top: 0.25em;
+}
 .name a,
 nav a {
   text-align: center;
+  display: block;
+  padding: 0.5em 1em;
 }
 
 nav a {
@@ -63,11 +68,17 @@ nav a:hover {
 .banner {
   color: #fff;
   background: #3acec2;
+  text-align: center;
+  padding: 3.2em 0.25em;
+  margin-bottom: 4em;
 }
 
 /* Page Elements */
 .logo {
   width: 190px;
+}
+main {
+  padding: 1em;
 }
 
 /* Footer */
