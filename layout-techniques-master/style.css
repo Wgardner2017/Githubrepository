@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-/* Base styles */
+/* Base element styles */
 body {
   font-family: 'Varela Round', sans-serif;
   line-height: 1.6;
@@ -12,7 +12,7 @@ body {
 
 p {
   font-size: .95em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.8em;
 }
 
 h2,
@@ -30,107 +30,49 @@ a {
   text-decoration: none;
 }
 
-/* Header Styles */
-
-header > * {
-  outline: 1px solid black;
+img {
+  max-width: 100%;
 }
 
-header {
-  background: #3acec2;
-  padding: 1.5em 0;
-  margin-bottom: 1.875em;
+/* =======================
+   Base Layout Styles 
+======================== */
+
+/* Navigation  */
+.name {
+  font-size: 1.25em;
+}
+
+.name a,
+nav a {
   text-align: center;
 }
 
-header .wrapper {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-header h1 a,
 nav a {
-  color: white;
-}
-
-nav {
+  font-size: 0.95em;
+  color: #3acec2;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  height: 15em;
-  justify-content: space-between;
 }
 
-nav > div {
-  background-color: rgba(200, 200, 200, 0.5);
-  padding: 0.5em;
-  border-bottom: 0.5em;
+nav a:hover {
+  color: #093a58;
 }
 
-/* Main Content Styles*/
-main {
-  padding: 1em;
-}
-/* Box-sizing border-box */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+/* Layout Containers */
+
+.banner {
+  color: #fff;
+  background: #3acec2;
 }
 
-.box {
-  color: white;
-  font-size: 1.25em;
-  text-align: left;
-
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin: 10px;
+/* Page Elements */
+.logo {
+  width: 190px;
 }
 
-/* Colours for each box */
-.box1 {
-  background: #1abc9c;
-}
-.box2 {
-  background: #3498db;
-}
-/* We start writing out flexbox here. The above is just page setup */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100%;
-  border: white;
-}
-
-.box {
-  flex: 1 0 0;
-}
-.box2 {
-  flex: 1 0 0;
-}
-/* Footer Styles */
+/* Footer */
 footer {
-  text-align: left;
-  background: #d9e4ea;
+  text-align: center;
   padding: 2em 1em;
-}
-/* Exact width */
-@media all and (min-width: 768px) {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 100%;
-    border: white;
-  }
-  .box {
-    flex: 2 0 0;
-  }
-  .box2 {
-    flex: 1 0 0;
-  }
+  background: #d9e4ea;
 }
